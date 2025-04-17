@@ -1,14 +1,28 @@
 # this is the part that will take the text to be cyphered
+# you aren't supposed to be here, but its fine if you look at this i guess
 
 import re
-import secret.not_for_you as hidden # sec, fullname
+import secret.not_for_you as hidden
+
 
 def encode(text):
     coded = 0;
     for c in text:
         d = match(c)
         coded = (coded * 1000) + d
-    return coded
+    return toNine(coded)
+
+def toNine(ten):
+    nine = []
+    while ten:
+        nine.append(ten % 9)
+        ten = ten // 9
+    result = 0
+    i = len(nine) - 1
+    while i >= 0:
+        result = result * 10 + int(nine[i])
+        i-= 1
+    return result
 
 def match(t):
     aNum = 0

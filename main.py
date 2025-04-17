@@ -22,15 +22,15 @@ def enter():
 if __name__ == "__main__":
     print("hello, welcome to the thing for hw4.")
     print("to enter your own string respond with 1")
-    print("to guss my full name respond with 2")
-    tick = 0
+    print("to guess my full name respond with 2")
+    tick = 2
     escape = False
     while not escape:
         tick = input("what do you want to do: ")
         if (tick == "1") | (tick == "2"):
             escape = True
         else:
-            print("that is an invalid input, try again.\n")
+            print("that is an invalid input, try again.")
     if tick == "1":
         enter()
     if tick == "2":
