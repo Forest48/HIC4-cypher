@@ -1,2 +1,3 @@
 # HIC4-cypher
-a repo for homework 4 for Human Interface Computing, where I have to make a cypher
+
+to run the program simply run main.py, and respond to the pormpts in the terminal.
